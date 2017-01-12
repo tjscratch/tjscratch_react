@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../css/Header.css';
 
-class App extends Component {
-  render() {
-    return (
-        <header className="main-header">
+class Header extends Component {
+    render() {
+        return (
+            <header className="main-header">
                 <ul className="main_menu">
                     <li className="active">
                         <a href="#/" id="mainpage" className="mainpage">Главная</a>
@@ -25,9 +25,9 @@ class App extends Component {
                         <a href="#/enter">Вход</a>
                     </li>
                 </ul>
-        </header>
-    );
-  }
+            </header>
+        );
+    }
 }
 
-export default App;
+export default Header;

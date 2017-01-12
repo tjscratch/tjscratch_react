@@ -1,0 +1,21 @@
+.maintext{
+    position: relative;
+    font-family: armalite_rifle;
+    font-size: 75px;
+    text-align: center;
+    /*font-weight: bold;*/
+    color: #FFFFFF;
+    margin-top: 0;
+}
+@media screen and (max-width: 1400px) and (orientation: landscape) {
+    .maintext  {font-size: 75px;}
+}
+@media screen and (width: 1024px) and (orientation: portrait) {
+    .maintext  {font-size: 65px;}
+}
+@media screen and (max-width: 800px) and (orientation: landscape) {
+    .maintext {  font-size: 45px;}
+}
+@media screen and (width: 414px) {
+    .maintext {font-size: 25px;}
+}

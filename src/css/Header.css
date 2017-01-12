@@ -1,0 +1,45 @@
+@font-face {
+    font-family: armalite_rifle;
+    src: url(../fonts/armalite_rifle.ttf);
+}
+@font-face {
+    font-family: beaumarchaisc;
+    src: url(../fonts/beaumarchaisc.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+.main-header{
+    background:linear-gradient(to bottom,#2f2f2f 0,#1c1c1c 100%);
+}
+.main_menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.main_menu>li{
+    list-style: none;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 120px;
+    flex-shrink: 1;
+}
+.main_menu>li>a{
+    text-decoration: none;
+    font-family: beaumarchaisc;
+    font-weight: bold;
+    font-size: 29px;
+    width: 180px;
+    color:#fefefe;
+    padding: 10px 15px;
+}
+@media screen and (width: 736px) {
+    .main_menu>li {width: 100px;}
+}
