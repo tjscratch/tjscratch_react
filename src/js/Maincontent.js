@@ -12,6 +12,9 @@ let Articles = function(props) {
 }
 
 let MainContent = React.createClass({
+    playMusic: function () {
+
+    },
 
     getInitialState: function() {
         return {
