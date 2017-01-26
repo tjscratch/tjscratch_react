@@ -26,7 +26,7 @@ body{
 }
 .main_menu>li{
     list-style: none;
-    padding: 2% 3%;
+    padding: 1% 4%;
     color: white;
     text-align: center;
     flex-shrink: 1;
@@ -37,7 +37,7 @@ body{
     font-weight: bold;
     font-size: 2em;
     color:#fefefe;
-    padding: 10px 15px;
+    /*padding: 10px 15px;*/
 }
 @media screen and (max-width: 1010px) {
     .main_menu>li {padding: 2%;}

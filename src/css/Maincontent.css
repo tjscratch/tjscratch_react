@@ -9,7 +9,7 @@
 }
 .article_container{
     display: block;
-    margin: 5px auto;
+    margin: 0 auto;
     max-width: 1200px;
     text-align:justify;
     border-radius: 5px;
@@ -43,10 +43,13 @@
     font-size: 33px;
     font-family: armalite_rifle, beaumarchaisc;
     padding: 1%;
-    margin: 0;
+    margin: 1%;
 }
 @media screen and (max-width: 1200px) {
     .maintext {font-size: 4em;}
+}
+@media screen and (max-width: 776px) {
+    .maintext {font-size: 3em;}
 }
 @media screen and (max-width: 667px) {
     .maintext {font-size: 2.7em;}
