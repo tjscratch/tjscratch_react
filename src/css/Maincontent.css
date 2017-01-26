@@ -1,7 +1,7 @@
 .maintext{
     position: relative;
     font-family: armalite_rifle;
-    font-size: 75px;
+    font-size: 5em;
     text-align: center;
     color: #FFFFFF;
     margin: 0;
@@ -21,7 +21,7 @@
     align-self: flex-start;
     float: left;
     height: 90%;
-    width: 50%;
+    width: 45%;
     padding: 10px;
 }
 .article_right{
@@ -29,6 +29,14 @@
     height: 90%;
     width: 35%;
     padding: 10px;
+    cursor: pointer;
+}
+.article_right_gif{
+    float: right;
+    height: 90%;
+    width: 35%;
+    padding: 10px;
+    cursor: pointer;
 }
 .articletext{
     color: #E4E4E4;

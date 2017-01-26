@@ -4,14 +4,16 @@ import '../css/Maincontent.css';
 
 let Articles = function(props) {
     function playMusic() {
-        if (props.className === "article_right" && props.imageUrl === "content/images/cyberdj_240x320.png")
+        if (document.getElementById("2").className === "article_right")
         {
-            document.getElementById("2").src="content/images/cyberdj_240x320.gif";
-         document.getElementById("music").play()
-        }else {
+         document.getElementById("2").src="content/images/cyberdj_240x320.gif";
+         document.getElementById("2").className="article_right_gif";
+         document.getElementById("music").play();
+        }else if (document.getElementById("2").className ==="article_right_gif")
+        {
+         document.getElementById("2").className="article_right";
          document.getElementById("2").src="content/images/cyberdj_240x320.png";
-         document.getElementById("music").pause()
-            console.log(document.getElementById("2").src.indexOf("cyberdj_240x320.gif"))
+         document.getElementById("music").pause();
         }
 
     }
@@ -46,7 +48,7 @@ let MainContent = React.createClass({
                 {this.state.article.map(function(article) {
                     return  <Articles key={article.id} imageUrl={article.imageUrl} Text={article.Text} className={article.class} Id={article.id}/>
                 })}
-                <audio controls id="music" src="content/Flatline.mp3" type="audio/mpeg"></audio>
+                <audio id="music" src="content/Flatline.mp3" type="audio/mpeg"></audio>
             </div>
         )
     }
