@@ -22,28 +22,34 @@
     float: left;
     height: 90%;
     width: 45%;
-    padding: 10px;
+    padding: 1%;
 }
 .article_right{
     float: right;
     height: 90%;
-    width: 35%;
-    padding: 10px;
+    width: 32%;
+    padding: 1%;
     cursor: pointer;
 }
 .article_right_gif{
     float: right;
     height: 90%;
-    width: 35%;
-    padding: 10px;
+    width: 32%;
+    padding: 1%;
     cursor: pointer;
 }
 .articletext{
     color: #E4E4E4;
     font-size: 33px;
     font-family: armalite_rifle, beaumarchaisc;
-    padding: 5px;
-    margin: 10px;
+    padding: 1%;
+    margin: 0;
+}
+@media screen and (max-width: 1200px) {
+    .maintext {font-size: 4em;}
+}
+@media screen and (max-width: 667px) {
+    .maintext {font-size: 2.7em;}
 }
 /*@media screen and (max-width: 1400px) and (orientation: landscape) {*/
     /*.maintext  {font-size: 75px;}*/

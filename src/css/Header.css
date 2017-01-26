@@ -26,7 +26,7 @@ body{
 }
 .main_menu>li{
     list-style: none;
-    padding: 10px 30px;
+    padding: 2% 3%;
     color: white;
     text-align: center;
     flex-shrink: 1;
@@ -39,6 +39,12 @@ body{
     color:#fefefe;
     padding: 10px 15px;
 }
-@media screen and (width: 736px) {
-    .main_menu>li {width: 100px;}
+@media screen and (max-width: 1010px) {
+    .main_menu>li {padding: 2%;}
+}
+@media screen and (max-width: 736px) {
+    .main_menu>li {padding: 1%;}
+}
+@media screen and (max-width: 667px) {
+    .main_menu>li {font-size: 0.8em;}
 }
