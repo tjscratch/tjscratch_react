@@ -13,6 +13,10 @@ body{
 }
 .main-header{
     background:linear-gradient(to bottom,#2f2f2f 0,#1c1c1c 100%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 .main_menu{
     display: flex;
