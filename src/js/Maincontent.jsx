@@ -1,5 +1,5 @@
 import React from 'react'
-import axios from 'axios'
+import { getArticles } from './xhr/Articles'
 import '../css/Maincontent.css';
 
 let Articles = function(props) {
@@ -17,7 +17,6 @@ let Articles = function(props) {
         }
 
     }
-
     return (
         <div className="article_container">
             <img id={props.Id} className={props.className} alt="articleimg" src={props.imageUrl} role="presentation" onClick={playMusic}/>
@@ -34,24 +33,23 @@ let MainContent = React.createClass({
     },
 
     componentDidMount: function() {
-        axios.get('content/articles.json').then(results =>{
+        getArticles().then(results =>{
             this.setState({
                 article: results.data
             })
         })
     },
-
     render: function() {
         return (
             <div>
                 <h1 className="maintext">Music is the breath of life!</h1>
-                {this.state.article.map(function(article) {
+                {this.state.article.map(article => {
                     return  <Articles key={article.id} imageUrl={article.imageUrl} Text={article.Text} className={article.class} Id={article.id}/>
                 })}
                 <audio id="music" src="content/Flatline.mp3" type="audio/mpeg"></audio>
             </div>
         )
     }
-})
+});
 
 export default MainContent;

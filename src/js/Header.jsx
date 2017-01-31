@@ -1,33 +1,32 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/Header.css';
+import { Link } from 'react-router'
 
-class Header extends Component {
-    render() {
+let Header =function () {
         return (
             <header className="main-header">
                 <ul className="main_menu">
                     <li className="active">
-                        <a href="#/" id="mainpage" className="mainpage">Главная</a>
+                        <Link to="/">Главная</Link>
                     </li>
                     <li>
-                        <a href="#/music">Музыка</a>
+                        <Link to="/music">Музыка</Link>
                     </li>
                     <li>
-                        <a href="#/video">Видео</a>
+                        <Link to="/video">Видео</Link>
                     </li>
                     <li>
-                        <a href="#/photo" id="photo">Фото</a>
+                        <Link to="/photo" id="photo">Фото</Link>
                     </li>
                     <li>
-                        <a href="#/chat">Чат</a>
+                        <Link to="/chat">Чат</Link>
                     </li>
                     <li>
-                        <a href="#/enter">Вход</a>
+                        <Link to="/enter">Вход</Link>
                     </li>
                 </ul>
             </header>
-        );
-    }
-}
+        )
+    };
 
 export default Header;
