@@ -1,8 +1,9 @@
 import React from 'react';
 import '../css/Music.css';
+import Header from './Header'
 // import 'bootstrap/dist/css/bootstrap.css';
 
-let Music = function () {
+let MusicContent = function () {
         return (
             <div className="music_container">
                 <h1 className="slogan">Choose your favorite style!</h1>
@@ -62,5 +63,15 @@ let Music = function () {
             </div>
         );
     };
+let Music = React.createClass({
+    render: function() {
+        return (
+            <div>
+               <Header/>
+                <MusicContent/>
+            </div>
+        )
+    }
+});
 
 export default Music;
