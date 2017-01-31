@@ -5,7 +5,7 @@ import '../css/Music.css';
 let Music = function () {
         return (
             <div className="music_container">
-                <h1 className="slogan">"Choose your favorite style!"</h1>
+                <h1 className="slogan">Choose your favorite style!</h1>
                 <ul className="nav nav-tabs" id="NavTab">
                     <li role="presentation" className="active"><a href="#Aggrotech" role="tab" data-toggle="tab">Aggrotech</a></li>
                     <li role="presentation" className="active"><a href="#Aggrotech" role="tab" data-toggle="tab">Aggrotech</a></li>
